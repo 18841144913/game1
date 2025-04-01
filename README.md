@@ -34,7 +34,3 @@ git clone https://github.com/your-username/monster-survivors.git
 - 使用鼠标瞄准和射击
 - 收集道具提升战斗能力
 - 在怪物浪潮中尽可能生存
-
-## 🔗 相关链接
-
-- [游戏演示地址](https://game1.cuanxue.com/monster-survivors)
