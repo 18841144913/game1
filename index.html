@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Monster Survivors - the ultimate survival action game online. Battle through hordes of creatures and become the last standing survivor!">
+    <meta name="keywords" content="Monster Survivors, online survival game, action game, monster battle game">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://game1.cuanxue.com/monster-survivors" />
+    
+    <!-- Open Graph / Twitter Cards -->
+    <meta property="og:title" content="Monster Survivors | Online Survival Action Game">
+    <meta property="og:description" content="Battle through hordes of creatures in Monster Survivors - the ultimate online survival game. Play now for free!">
+    <meta property="og:image" content="https://game1.cuanxue.com/images/og-image.jpg">
+    <meta property="og:url" content="https://game1.cuanxue.com/monster-survivors">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Monster Survivors | Ultimate Survival Action Game</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        .game-frame {
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .game-frame {
+                height: 500px;
+            }
+        }
+    </style>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Monster Survivors",
+                subtitle: "Survive the Night - Outlast the Horde - Become the Ultimate Warrior",
+                aboutTitle: "About Monster Survivors",
+                aboutText: "Monster Survivors is an intense survival action game where players battle through waves of terrifying creatures. Featuring next-gen graphics and smooth controls, this ultimate survival challenge will test your combat skills and strategic thinking.",
+                featuresTitle: "Game Features",
+                features: [
+                    "Dynamic day-night cycle system",
+                    "50+ unique monster types",
+                    "Progressive weapon upgrade system",
+                    "Multiplayer survival mode",
+                    "Global leaderboards"
+                ],
+                howToPlayTitle: "How to Play",
+                howToPlayText: "Use WASD or arrow keys to move, mouse to aim and shoot. Collect power-ups and weapons to enhance your combat abilities. Survive as long as possible against increasingly challenging waves of monsters!"
+            },
+            zh: {
+                title: "怪物幸存者",
+                subtitle: "熬过黑夜 - 击败怪物 - 成为终极战士",
+                aboutTitle: "关于怪物幸存者",
+                aboutText: "《怪物幸存者》是一款紧张刺激的生存动作游戏，玩家需要与一波波可怕的生物战斗。游戏拥有次世代画面和流畅的操作，这场终极生存挑战将考验你的战斗技巧和战略思维。",
+                featuresTitle: "游戏特色",
+                features: [
+                    "动态昼夜循环系统",
+                    "50+ 种独特怪物类型",
+                    "渐进式武器升级系统",
+                    "多人生存模式",
+                    "全球排行榜"
+                ],
+                howToPlayTitle: "如何游玩",
+                howToPlayText: "使用 WASD 或方向键移动，鼠标瞄准并射击。收集强化道具和武器以增强战斗能力。在越来越具挑战性的怪物浪潮中尽可能生存下去！"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.querySelector("#title").textContent = translations[lang].title;
+            document.querySelector("#subtitle").textContent = translations[lang].subtitle;
+            document.querySelector("#about-title").textContent = translations[lang].aboutTitle;
+            document.querySelector("#about-text").textContent = translations[lang].aboutText;
+            document.querySelector("#features-title").textContent = translations[lang].featuresTitle;
+            const featuresList = document.querySelector("#features-list");
+            featuresList.innerHTML = "";
+            translations[lang].features.forEach(feature => {
+                const li = document.createElement("li");
+                li.textContent = feature;
+                featuresList.appendChild(li);
+            });
+            document.querySelector("#how-to-play-title").textContent = translations[lang].howToPlayTitle;
+            document.querySelector("#how-to-play-text").textContent = translations[lang].howToPlayText;
+        }
+    </script>
+</head>
+<body class="bg-white antialiased">
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div>
+                <h1 id="title" class="text-4xl font-bold tracking-tight text-center">
+                    Monster Survivors
+                </h1>
+                <p id="subtitle" class="mt-2 text-lg text-slate-300 text-center">
+                    Survive the Night - Outlast the Horde - Become the Ultimate Warrior
+                </p>
+            </div>
+            <div>
+                <button onclick="switchLanguage('en')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    English
+                </button>
+                <button onclick="switchLanguage('zh')" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition ml-2">
+                    中文
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Game Frame -->
+        <section class="mb-12">
+            <div class="game-frame rounded-xl overflow-hidden">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                    class="w-full h-[600px]"
+                    loading="lazy"
+                    title="Monster Survivors Game"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Game Description -->
+        <section class="prose prose-slate max-w-3xl mx-auto">
+            <h2 id="about-title" class="text-2xl font-semibold text-slate-900 mb-4">
+                About Monster Survivors
+            </h2>
+            <p id="about-text" class="text-lg text-slate-600 mb-6">
+                Monster Survivors is an intense survival action game where players battle through waves of terrifying creatures. 
+                Featuring next-gen graphics and smooth controls, this ultimate survival challenge will test your combat skills 
+                and strategic thinking.
+            </p>
+
+            <h2 id="features-title" class="text-2xl font-semibold text-slate-900 mb-4">
+                Game Features
+            </h2>
+            <ul id="features-list" class="list-disc pl-6 text-slate-600 space-y-2">
+                <li>Dynamic day-night cycle system</li>
+                <li>50+ unique monster types</li>
+                <li>Progressive weapon upgrade system</li>
+                <li>Multiplayer survival mode</li>
+                <li>Global leaderboards</li>
+            </ul>
+
+            <h2 id="how-to-play-title" class="text-2xl font-semibold text-slate-900 mt-8 mb-4">
+                How to Play
+            </h2>
+            <p id="how-to-play-text" class="text-lg text-slate-600">
+                Use WASD or arrow keys to move, mouse to aim and shoot. Collect power-ups and weapons to enhance your combat 
+                abilities. Survive as long as possible against increasingly challenging waves of monsters!
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>© 2024 Monster Survivors. All rights reserved. | 
+                <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> | 
+                <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
